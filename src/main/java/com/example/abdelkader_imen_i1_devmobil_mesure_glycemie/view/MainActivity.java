@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == REQUEST_CODE ){
-            if (requestCode==RESULT_CANCELED){
+            if (resultCode==RESULT_CANCELED){
 
                 Toast.makeText(MainActivity.this,"Error : RESULT_CANCELED",Toast.LENGTH_LONG);
             }
